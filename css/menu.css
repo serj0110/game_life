@@ -1,0 +1,33 @@
+.menu {
+  border-bottom: 1px dashed #000;
+  width: 535px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+.menu .settingsLife {
+  float: left;
+  margin: 0 5px 0 5px;
+}
+.menu .settingsLife input {
+  width: 50px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.menu .settingsLife input:focus {
+  outline: none;
+  border: 1px solid #01a9db;
+}
+.menu input[type="button"] {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  float: left;
+  margin: 0 5px 0 5px;
+}
+.menu input[type="button"]:hover {
+  border: 1px solid #000;
+  background: #01a9db;
+}

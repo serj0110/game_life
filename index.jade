@@ -1,24 +1,23 @@
 doctype html
 html
     head
+        meta(http-equiv="Content-type" content="text/html; charset=utf-8")
         title Игра "Жизнь"
-        meta(charset="utf-8")
-        link(href="styles/style.css" rel="stylesheet" type="text/css")
-        link(href="styles/menu.css" rel="stylesheet" type="text/css")
-        link(href="styles/main.css" rel="stylesheet" type="text/css")
-
-    body(onload="life()")
+        link(href="css/style.css" type="text/css" rel="stylesheet")
+        link(href="css/menu.css" type="text/css" rel="stylesheet")
+        link(href="css/app.css" type="text/css" rel="stylesheet")
+        script(src="js/script.js" type="text/javascript")
+    body(onload="life(1);")
         div.page-wrapper
-            div.setting
-                div.setLife X:
-                    input(type="text" id="lifeWidth" value="")
-                div.setLife Y:
-                    input(type="text" id="lifeHeight" value="")
-                div.setLife Задержка в МС
-                    input(type="text" id="lifeDelay" value="")
-                button(onclick="if (!active) lifeStart();") Начать
-                button(onclick="lifePause();") Пауза
+            div.menu
+                div.settingsLife X:
+                    input(id="setWidth" value="")
+                div.settingsLife Y:
+                    input(id="setHeight" value="")
+                div.settingsLife Задержка, мс
+                    input(id="setDelay" value="")
+                input(type="button" value="Начать" onClick="if(!active) setStart(1);")
+                input(type="button" value="Пауза" onClick="setPause();")
+                input(type="button" value="Очистить" onClick="setClear();")
                 div.clearfix
-            div.life
-                canvas(id="example")
-                script(src="JS/script.js" type="text/javascript")
+            div(id="app")

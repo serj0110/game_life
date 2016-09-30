@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.page-wrapper {
+  width: 100%;
+  height: auto;
+}
+.clearfix {
+  height: 10px;
+  background: #fff;
+  clear: both;
+  height: 0;
+}

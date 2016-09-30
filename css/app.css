@@ -1,0 +1,23 @@
+#app {
+  margin: 0;
+  text-align: center;
+}
+#app #field {
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+#app #field tr {
+  line-height: 15px;
+}
+#app #field tr td {
+  margin: auto;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  border: 1px solid #000;
+  background-color: #fff;
+  text-indent: -999em;
+  cursor: pointer;
+}
