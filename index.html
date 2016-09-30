@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Игра "Жизнь"</title>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/menu.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="life()">
+    <div class="page-wrapper">
+      <div class="setting">
+        <div class="setLife">X:
+          <input type="text" id="lifeWidth" value="">
+        </div>
+        <div class="setLife">Y:
+          <input type="text" id="lifeHeight" value="">
+        </div>
+        <div class="setLife">Задержка в МС
+          <input type="text" id="lifeDelay" value="">
+        </div>
+        <button onclick="if (!active) lifeStart();">Начать</button>
+        <button onclick="lifePause();">Пауза</button>
+        <div class="clearfix"></div>
+      </div>
+      <div class="life">
+        <canvas id="example"></canvas>
+        <script src="JS/script.js" type="text/javascript"></script>
+      </div>
+    </div>
+  </body>
+</html>

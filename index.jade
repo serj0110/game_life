@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Игра "Жизнь"
+        meta(charset="utf-8")
+        link(href="styles/style.css" rel="stylesheet" type="text/css")
+        link(href="styles/menu.css" rel="stylesheet" type="text/css")
+        link(href="styles/main.css" rel="stylesheet" type="text/css")
+
+    body(onload="life()")
+        div.page-wrapper
+            div.setting
+                div.setLife X:
+                    input(type="text" id="lifeWidth" value="")
+                div.setLife Y:
+                    input(type="text" id="lifeHeight" value="")
+                div.setLife Задержка в МС
+                    input(type="text" id="lifeDelay" value="")
+                button(onclick="if (!active) lifeStart();") Начать
+                button(onclick="lifePause();") Пауза
+                div.clearfix
+            div.life
+                canvas(id="example")
+                script(src="JS/script.js" type="text/javascript")
